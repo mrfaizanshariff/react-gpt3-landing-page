@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import { Blog,Features,WhatGPT3,Header,Footer,Possibility } from './containers/index'
+import {Brand,Articles,CalltoAction,Feature,NavBar} from "./components/index"
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>React App</h1>
+      
+      <h1>
+        <Blog></Blog>
+        <WhatGPT3></WhatGPT3>
+        </h1>
+         <h2>
+        <Brand></Brand>
+        <Articles></Articles>
+        <NavBar></NavBar>
+         </h2>
+         <h1>
+          <h1>
+            <h1>
+              <h1>
+                Hii
+              </h1>
+            </h1>
+          </h1>
+         </h1>
     </div>
-  );
+  )
 }
-
-export default App;
+// this is the file where we can call the different components.
+// And this file gets placed in the html body inside the <div> which has id "root"
+export default App
