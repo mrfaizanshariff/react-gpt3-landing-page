@@ -1,0 +1,125 @@
+.gpt3__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.gpt3__navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gpt3__navabr-links_logo{
+  margin-right: 2rem;
+}
+.gpt3__navbar-links_logo img{
+    width: 62px;
+    height: 16px;
+}
+.gpt3__navbar-links_container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.gpt3__navbar-menu{
+    cursor: pointer;
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.gpt3__navbar-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    background-color: var(--color-footer);
+    margin-top: 1rem;
+    text-align: end;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);    
+}
+.gpt3__navbar-menu_container-links p{
+    margin: 1rem !important;
+}
+
+.gpt3_navbar-sign,.gpt3_navbar-menu_sign{
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+.gpt3_navbar-sign button{
+    border: none;
+    outline: none;
+    padding: 16px 44px;
+    background-color: #FF4820;
+    border-radius: 5px;
+    }
+.gpt3_navbar-menu_sign button{
+    border: none;
+    outline: none;
+    padding: 6px 16px;
+    background-color: #FF4820;
+    border-radius: 5px;
+}   
+.gpt3_navbar-sign button:hover,
+.gpt3_navbar-menu_sign button:hover{
+    background-color: #fc6644;
+}
+.gpt3__navbar-links_container p,
+.gpt3_navbar-sign p,
+.gpt3_navbar-sign button,
+.gpt3__navbar-menu_container p,
+.gpt3_navbar-menu_sign p,
+.gpt3_navbar-menu_sign button{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* media queries */
+@media screen and (max-width: 1050px) {
+    .gpt3__navbar-links_container{
+        display: none;
+    }
+    .gpt3_navbar-menu_sign{
+        display: none;
+    }
+    .gpt3__navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .gpt3_navbar-menu_sign{
+        display: none;
+    }
+    .gpt3__navbar{
+        padding: 2rem 4rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .gpt3_navbar-sign{
+        display: none;
+    }
+    .gpt3_navbar-menu_sign{
+        margin-bottom: 1rem ;
+        display: flex;
+    }
+    .gpt3__navbar{
+        padding: 2rem 2rem;
+    }
+    .gpt3__navbar-menu_container{
+        top: 20px;
+    }
+}

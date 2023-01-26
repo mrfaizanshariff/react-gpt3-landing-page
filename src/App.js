@@ -1,29 +1,22 @@
 import React from 'react'
+import "./App.css"
+import "./index.css"
 import { Blog,Features,WhatGPT3,Header,Footer,Possibility } from './containers/index'
-import {Brand,Articles,CalltoAction,Feature,NavBar} from "./components/index"
+import {Brand,Articles,CallToAction,Feature,NavBar} from "./components/index"
 const App = () => {
   return (
-    <div>
-      <h1>React App</h1>
-      
-      <h1>
-        <Blog></Blog>
-        <WhatGPT3></WhatGPT3>
-        </h1>
-         <h2>
-        <Brand></Brand>
-        <Articles></Articles>
-        <NavBar></NavBar>
-         </h2>
-         <h1>
-          <h1>
-            <h1>
-              <h1>
-                Hii
-              </h1>
-            </h1>
-          </h1>
-         </h1>
+    <div className='App'>
+      <div className='gradient__bg'>
+        <NavBar/>
+        <Header/>
+      </div>
+      <Brand/>
+      <WhatGPT3/>
+      <Features/>
+      <Possibility/>
+      <CallToAction/>
+      <Blog/>
+      <Footer/>
     </div>
   )
 }
