@@ -5,11 +5,11 @@ import { Blog,Features,WhatGPT3,Header,Footer,Possibility } from './containers/i
 import {Brand,Articles,CallToAction,Feature,NavBar} from "./components/index"
 const App = () => {
   return (
-    <div className='App'>
-      <div className='gradient__bg'>
+    <div className='App gradient__bg'>
+      <div >
         <NavBar/>
         <Header/>
-      </div>
+      </div >
       <Brand/>
       <WhatGPT3/>
       <Features/>
