@@ -46,6 +46,9 @@
 .gpt3__navbar-menu_container-links p{
     margin: 1rem !important;
 }
+.gpt3__navbar-menu_container-links p>a:active{
+    text-decoration: underline;
+}
 
 .gpt3_navbar-sign,.gpt3_navbar-menu_sign{
     display: flex;
